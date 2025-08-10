@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\API\\API.csproj": {}
+    "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\API\\API.csproj": {
+    "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\API\\API.csproj",
+        "projectPath": "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api\\API.csproj",
         "packagesPath": "C:\\Users\\FJCMGAMER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\API\\obj\\",
+        "outputPath": "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\FJCMGAMER\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -42,6 +42,16 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
