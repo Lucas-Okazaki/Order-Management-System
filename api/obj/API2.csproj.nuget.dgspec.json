@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api\\API.csproj": {}
+    "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api2\\API2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api\\API.csproj": {
+    "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api2\\API2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api\\API.csproj",
-        "projectName": "API",
-        "projectPath": "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api\\API.csproj",
+        "projectUniqueName": "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api2\\API2.csproj",
+        "projectName": "API2",
+        "projectPath": "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api2\\API2.csproj",
         "packagesPath": "C:\\Users\\FJCMGAMER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api\\obj\\",
+        "outputPath": "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\FJCMGAMER\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -43,13 +43,25 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Azure.Messaging.ServiceBus": {
+              "target": "Package",
+              "version": "[7.17.4, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[9.0.8, )"
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[8.0.8, )"
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[9.0.4, )"
+              "version": "[8.0.4, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.6.2, )"
             }
           },
           "imports": [
@@ -64,6 +76,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
