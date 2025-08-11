@@ -6,7 +6,7 @@ using Azure.Messaging.ServiceBus;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
-builder.WebHost.UseUrls("http://localhost:5099");
+builder.WebHost.UseUrls("http://localhost:5000");
 
 var pgCs = builder.Configuration.GetConnectionString("DefaultConnection");
 if (!string.IsNullOrWhiteSpace(pgCs))
@@ -48,6 +48,20 @@ if (!string.IsNullOrWhiteSpace(serviceBusCs))
 builder.Services.AddScoped<OrderService>();
 builder.Services.AddHostedService<OrderProcessorWorker>();
 
+// CORS para permitir o frontend local (Vite)
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowFrontend",
+        policy => policy
+            .WithOrigins(
+                "http://localhost:3000",
+                "http://127.0.0.1:3000"
+            )
+            .AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowCredentials());
+});
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -58,6 +72,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("AllowFrontend");
 
 using (var scope = app.Services.CreateScope())
 {
