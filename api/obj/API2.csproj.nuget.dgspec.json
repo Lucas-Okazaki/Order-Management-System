@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api2\\API2.csproj": {}
+    "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api\\API2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api2\\API2.csproj": {
+    "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api\\API2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api2\\API2.csproj",
+        "projectUniqueName": "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api\\API2.csproj",
         "projectName": "API2",
-        "projectPath": "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api2\\API2.csproj",
+        "projectPath": "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api\\API2.csproj",
         "packagesPath": "C:\\Users\\FJCMGAMER\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api2\\obj\\",
+        "outputPath": "C:\\Users\\FJCMGAMER\\Desktop\\poc\\Order-Management-System\\api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\FJCMGAMER\\AppData\\Roaming\\NuGet\\NuGet.Config"
