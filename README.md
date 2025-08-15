@@ -14,29 +14,9 @@ Sistema de Gestão de Pedidos com .NET 8 (API) e React + Vite + Tailwind (Fronte
 - Windows, macOS ou Linux
 - .NET SDK 8.0+
 - Node.js 20+ e npm
-- (Opcional) Docker para PostgreSQL
+- Docker para PostgreSQL
 
-## Rodando o projeto completo (modo rápido - InMemory)
-Este modo usa o banco em memória (sem depender de Postgres).
-
-1) API
-```powershell
-cd api
-dotnet run
-```
-- A API iniciará em `http://localhost:5000`
-- Endpoints: `/orders` (GET/POST), `/orders/{id}` (GET)
-
-2) Frontend
-Abra um novo terminal:
-```powershell
-cd web-app
-npm i
-npm run dev
-```
-- Acesse `http://localhost:3000`
-
-## Rodando com PostgreSQL (opcional)
+## Rodando com PostgreSQL
 Se quiser persistência real, suba um Postgres com Docker e configure a string de conexão.
 
 1) Subir Postgres via Docker Compose (opcional)
